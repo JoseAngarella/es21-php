@@ -36,7 +36,7 @@
         function stampaTabellaStudenti($studenti){
             $stampa="<table style='border-collapse:collapse'><tr><th>Nome Studente</th><th>Cognome Studente</th><th>Media Voti</th><th>Voto Massimo</th></tr>";
             foreach($studenti as $studente){
-                $stampa=$stampa."<tr><td>{$studente['nome']}</td><td>{$studente['nome']}</td><td>".
+                $stampa=$stampa."<tr><td>{$studente['nome']}</td><td>{$studente['cognome']}</td><td>".
                 ottioniMedia($studente["voti"])."</td><td>".ottieniMax($studente["voti"])."</td></tr>";
                 
             }
